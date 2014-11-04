@@ -10,7 +10,7 @@ class PartThreeTest extends PHPUnit_Framework_TestCase
     public function testTree1()
     {
         /*
-         * Create a skewed BST and check balance in several nodes.
+         * Create a skewed BST and check balance in several different nodes.
          *
          *                  1
          *         2                 3
