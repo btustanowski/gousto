@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2d8fef7-ecfe-480f-95f8-d975a71ed1ed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PartTwo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/PartTwoTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WordSwap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PartOne.php" afterPath="$PROJECT_DIR$/PartOne.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Node.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PartThree.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/PartThreeTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/PartTwoTest.php" afterPath="$PROJECT_DIR$/tests/PartTwoTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WordSwap.php" afterPath="$PROJECT_DIR$/src/WordSwap.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gousto.iws" />
@@ -31,41 +32,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PartTwo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PartTwo.php">
+      <file leaf-file-name="Node.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Node.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
-              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+            <state vertical-scroll-proportion="-25.923077" vertical-offset="312" max-vertical-offset="1190">
+              <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordSwap.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WordSwap.php">
+      <file leaf-file-name="PartThree.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PartThree.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="561">
-              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+            <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="969">
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PartTwoTest.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/PartTwoTest.php">
+      <file leaf-file-name="PartThreeTest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/PartThreeTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46406052" vertical-offset="431" max-vertical-offset="1224">
-              <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PartOneTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/PartOneTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.038462" vertical-offset="975" max-vertical-offset="1768">
-              <caret line="88" column="5" selection-start-line="88" selection-start-column="5" selection-end-line="89" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.6141236" vertical-offset="108" max-vertical-offset="901">
+              <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -91,7 +82,11 @@
         <option value="$PROJECT_DIR$/PartOne.php" />
         <option value="$PROJECT_DIR$/PartTwo.php" />
         <option value="$PROJECT_DIR$/src/WordSwap.php" />
+        <option value="$PROJECT_DIR$/src/SimpleBST.php" />
+        <option value="$PROJECT_DIR$/PartThree.php" />
         <option value="$PROJECT_DIR$/tests/PartTwoTest.php" />
+        <option value="$PROJECT_DIR$/src/Node.php" />
+        <option value="$PROJECT_DIR$/tests/PartThreeTest.php" />
       </list>
     </option>
   </component>
@@ -190,6 +185,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\wamp\www\gousto\tests" />
+      <recent name="D:\wamp\www\gousto" />
     </key>
   </component>
   <component name="RunManager">
@@ -339,32 +335,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WordSwap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="561">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/PartOneTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.038462" vertical-offset="975" max-vertical-offset="1768">
-          <caret line="88" column="5" selection-start-line="88" selection-start-column="5" selection-end-line="89" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.23581336" vertical-offset="0" max-vertical-offset="793">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PartTwo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.12862547" vertical-offset="0" max-vertical-offset="793">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/PartOneTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6683481" vertical-offset="949" max-vertical-offset="1768">
+          <caret line="87" column="31" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/PartTwoTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46406052" vertical-offset="431" max-vertical-offset="1224">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.6141236" vertical-offset="244" max-vertical-offset="1343">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.923077" vertical-offset="312" max-vertical-offset="1190">
+          <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PartThree.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="969">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/PartThreeTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6141236" vertical-offset="108" max-vertical-offset="901">
+          <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
           <folding />
         </state>
       </provider>

@@ -34,33 +34,40 @@ class PartTwoTest extends PHPUnit_Framework_TestCase
         $hello->run('        ');
     }
 
+    /**
+     * @throws Exception
+     */
     public function testReverse1()
     {
+        // A Finnish palindrome.
         $this->expectOutputString('saippuakivikauppias');
 
         $hello = new WordSwap();
 
-        // A Finnish palindrome.
         $hello->run('saippuakivikauppias');
     }
 
+    /**
+     * @throws Exception
+     */
     public function testReverse2()
     {
         $this->expectOutputString('olleh dlrow');
 
         $hello = new WordSwap();
 
-        // A Finnish palindrome.
         $hello->run('hello world');
     }
 
+    /**
+     * @throws Exception
+     */
     public function testReverse3()
     {
         $this->expectOutputString('ABBA saw a hsidewS pop puorg demrof ni mlohkcotS ni .2791');
 
         $hello = new WordSwap();
 
-        // A Finnish palindrome.
         $hello->run('ABBA was a Swedish pop group formed in Stockholm in 1972.');
     }
 

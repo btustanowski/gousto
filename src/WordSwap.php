@@ -1,8 +1,19 @@
 <?php
 
+/**
+ * Class WordSwap
+ */
 class WordSwap {
+    /**
+     * @var string
+     */
     private $delimiter = ' ';
 
+    /**
+     * @param $str
+     * @return $this
+     * @throws Exception
+     */
     public function run($str) {
 
         // Check input.
