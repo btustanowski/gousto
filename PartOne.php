@@ -21,13 +21,6 @@ $codes = [
     'VEN', 'VNM', 'VGB', 'VIR', 'WLF', 'ESH', 'YEM', 'ZMB', 'ZWE',
 ];
 
-
-$hello = new CountryCodes();
-$hello->addCode('CODE')->sort()->addMap([
-    'C' => 'SWAP'
-])->run();
-die;
-
 $hello = new CountryCodes();
 
 foreach ($codes as $code) $hello->addCode($code);
@@ -38,5 +31,3 @@ $hello->sort()->addMap([
     'B' => 'Bish',
     'N' => 'Nish'
 ])->run();
-
-
