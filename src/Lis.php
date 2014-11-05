@@ -13,13 +13,14 @@ class Lis {
      */
     private $subsequence_length = [];
     /**
-     * @var array
-     */
-    private $lis_keys = [];
-    /**
      * @var int
      */
     private $max_length = 1;
+
+    /**
+     * @var array
+     */
+    private $paths = [];
 
 
     /**
@@ -37,29 +38,21 @@ class Lis {
         $this->sequence = array_values($arr);
 
         // Find longest subsequences ending at each consecutive array element.
-        foreach ($arr as $key => $val) {
+        foreach ($this->sequence as $key => $val) {
+            $this->paths[$key][] = $val;
             $this->ls($key);
         }
 
-        $this->max_length = max($this->subsequence_length);
+        //var_dump($this->paths);die;
 
-        // Determine final elements of longest subsequences.
-        $endpoints = array_keys($this->subsequence_length, $this->max_length);
-
-        // At this point we're prepared to find all valid paths, but let's settle on the one with lowest indexes and return it.
-        foreach ($endpoints as $endpoint) {
-            $points = [];
-            for ($i = 1; $i <= $this->max_length; $i++) {
-                // Save all valid points.
-                // $points[] = array_keys(array_slice($this->subsequence_length, 0, $endpoint + 1), $i);
-
-                // Save the lowest index point.
-                $key = array_search($i, array_slice($this->subsequence_length, 0, $endpoint + 1));
-                $points[] = $this->sequence[$key];
+        // We have our max length, time to output the first array of that size. We could easily output all longest paths instead.
+        foreach ($this->paths as $path) {
+            if (count($path) === $this->max_length) {
+                return $path;
             }
         }
 
-        return $points;
+        return false;
     }
 
     /**
@@ -77,9 +70,13 @@ class Lis {
         if ($i !== 0) {
             $results = [];
             for ($j = 0; $j < $i; $j++) {
-                if($this->sequence[$i] > $this->sequence[$j])
+                if($this->sequence[$i] > $this->sequence[$j] && $this->subsequence_length[$i] < $this->subsequence_length[$j] + 1)
                 {
                     $results[] = $this->ls($j);
+                    $path = array_merge($this->paths[$j], [$this->sequence[$i]]);
+                    //if($i==5) var_dump($path);
+                    if (count($path) > count($this->paths[$i])) $this->paths[$i] = $path;
+                    if (count($path) > $this->max_length) $this->max_length = count($path);
                 }
             }
             // Save subsequence length to $i-th element (including that element).
