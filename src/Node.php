@@ -2,6 +2,8 @@
 
 /**
  * Class Node
+ *
+ * Perform task 3
  */
 class Node
 {
@@ -11,7 +13,7 @@ class Node
     public $value;
 
     /**
-     * @var null Left child
+     * @var null Left child.
      */
     public $left;
 
@@ -33,6 +35,8 @@ class Node
     }
 
     /**
+     * Public isBalanced is all we need to be accessible.
+     *
      * @return bool Whether the node's subtree is balanced.
      */
     public function isBalanced() {
@@ -40,6 +44,8 @@ class Node
     }
 
     /**
+     * Return the difference between left and right subtrees from the current node.
+     *
      * @return number
      */
     private function balance() {
@@ -55,6 +61,8 @@ class Node
     }
 
     /**
+     * Recursively check branch height.
+     *
      * @return int
      */
     private function height() {

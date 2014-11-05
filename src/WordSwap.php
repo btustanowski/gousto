@@ -2,15 +2,19 @@
 
 /**
  * Class WordSwap
+ *
+ * Perform task 2
  */
 class WordSwap {
     /**
-     * @var string
+     * @var string We can set the delimiter here, defaults to space.
      */
     private $delimiter = ' ';
 
     /**
-     * @param $str
+     * Run the swapper.
+     *
+     * @param $str String to reverse words in.
      * @return $this
      * @throws Exception
      */
@@ -22,10 +26,10 @@ class WordSwap {
         }
 
         try {
-            // Explode the string by spaces and trim each word just in case.
+            // Explode the string by our delimiter and trim each word just in case.
             $str_arr = array_map('trim', explode($this->delimiter, $str));
 
-            // Use PHP strrev() to reverse each word and echo the output.
+            // Use PHP's strrev() to reverse each word and echo the entire output.
             echo implode($this->delimiter, array_map('strrev', $str_arr));
 
         } catch (Exception $e) {
@@ -35,5 +39,4 @@ class WordSwap {
 
         return $this;
     }
-
 } 

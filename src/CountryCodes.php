@@ -7,17 +7,17 @@
  */
 class CountryCodes {
     /**
-     * @var array ISO-3366-1: Alpha-3 Codes
+     * @var array The script will work with a different set of codes. Not placing them all here also improves testability.
      */
     private $codes = [];
 
     /**
-     * @var array swap map for the operation
+     * @var array Order-sensitive swap map for the script.
      */
     private $swapmap = [];
 
     /**
-     * Sort loaded codes.
+     * Sort loaded codes using PHP's default sort.
      *
      * @return $this
      */
@@ -27,7 +27,7 @@ class CountryCodes {
     }
 
     /**
-     * Load country codes.
+     * Load country codes one by one. Easily adaptable for mass loading via an array parameter.
      *
      * @param string $code Code to add
      * @return $this
@@ -46,7 +46,7 @@ class CountryCodes {
     }
 
     /**
-     * Configure an array map for swaps.
+     * Configure the array map for swaps.
      *
      * @param $arr array of swap map entries, ex. [['A' => 'Aswap'], ['B' => 'Bswap']]
      * @return $this
@@ -76,7 +76,7 @@ class CountryCodes {
     }
 
     /**
-     * Run the process.
+     * Run the process, echo our codes.
      *
      * @return $this
      * @throws Exception
@@ -100,7 +100,7 @@ class CountryCodes {
      * Perform the swap if the condition is met.
      *
      * @param string $code
-     * @return string
+     * @return string swapped string or initial code
      */
     private function swap($code) {
         foreach ($this->swapmap as $map => $swap) {
@@ -111,7 +111,7 @@ class CountryCodes {
                 if (strpos($code, $element) !== false) $matches++;
             }
 
-            // Replace the string if matches equal map size. On match found, don't check more swaps.
+            // Replace the string if matches equal map size. On match found, don't check more swaps and return instantly.
             if (count($map_arr) === $matches) {
                 return $swap;
             }
